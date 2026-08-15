@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIUDL — Winnipeg Men's Indoor Ultimate Draft League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background: #12100e;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: #1d5fa8;
+      }
+      a:hover {
+        color: #c0192b;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] summary svg {
+        transform: rotate(180deg);
+      }
+      summary svg {
+        transition: transform 0.18s ease;
+      }
+      .miudl-btn {
+        transition:
+          box-shadow 0.15s ease,
+          transform 0.15s ease;
+      }
+      .miudl-btn-primary {
+        box-shadow: 5px 5px 0 #c0192b;
+      }
+      .miudl-btn-primary:hover {
+        box-shadow: 2px 2px 0 #c0192b;
+        transform: rotate(-1.5deg) translate(3px, 3px);
+      }
+      .miudl-btn-email {
+        box-shadow: 5px 5px 0 #12100e;
+      }
+      .miudl-btn-email:hover {
+        box-shadow: 2px 2px 0 #12100e;
+        transform: translate(3px, 3px);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="font-family: Rubik, system-ui, sans-serif; color: #16130f; background: #f7f1e1; overflow-x: hidden">
+      <header style="position: relative; background: #12100e">
+        <img src="uploads/hero.png" alt="MIUDL" style="display: block; width: 100%; height: auto" />
+        <div
+          style="
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(10, 8, 6, 0.85) 100%);
+            pointer-events: none;
+          "
+        ></div>
+      </header>
+
+      <section
+        style="position: relative; background: #12100e; padding: 0 20px 56px; text-align: center; overflow: hidden"
+      >
+        <div
+          style="
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(#e0a82e 1.6px, transparent 1.7px);
+            background-size: 14px 14px;
+            opacity: 0.14;
+            pointer-events: none;
+          "
+        ></div>
+        <div style="position: relative; max-width: 780px; margin: 0 auto">
+          <p
+            style="
+              font-family: Bangers, cursive;
+              letter-spacing: 2px;
+              font-size: clamp(26px, 5.4vw, 44px);
+              line-height: 1.15;
+              color: #f7f1e1;
+              margin: 0 0 18px;
+              padding-top: 40px;
+              text-wrap: balance;
+            "
+          >
+            The Winnipeg men's indoor ultimate <span style="color: #e0a82e">draft league</span> is back
+          </p>
+          <p
+            style="
+              font-size: clamp(16px, 2.4vw, 19px);
+              line-height: 1.6;
+              color: #ded5c3;
+              margin: 0 auto 32px;
+              max-width: 600px;
+              text-wrap: pretty;
+            "
+          >
+            Real team drafts instead of random player assignment. Captains build their rosters from a pool of interested
+            players, so teams come out fair and the games stay competitive.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center">
+            <a
+              href="https://forms.gle/Du3tsmb8fL3zJop77"
+              target="_blank"
+              rel="noopener"
+              class="miudl-btn miudl-btn-primary"
+              style="
+                display: inline-block;
+                font-family: Bangers, cursive;
+                font-size: 24px;
+                letter-spacing: 1.5px;
+                background: #e0a82e;
+                color: #12100e;
+                padding: 15px 30px 12px;
+                border: 3px solid #12100e;
+                border-radius: 4px;
+                text-decoration: none;
+                transform: rotate(-1.5deg);
+              "
+              >Register your interest</a
+            >
+          </div>
+          <p style="font-size: 14px; color: #9c9384; margin: 20px 0 0">
+            Registering interest is not a commitment. Captains draft, you play.
+          </p>
+        </div>
+      </section>
+
+      <section
+        style="
+          background: #c0192b;
+          padding: 44px 20px;
+          position: relative;
+          overflow: hidden;
+          border-top: 5px solid #12100e;
+          border-bottom: 5px solid #12100e;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            inset: -40% -10%;
+            background: repeating-conic-gradient(
+              from 0deg at 50% 50%,
+              rgba(29, 95, 168, 0.55) 0deg 1.4deg,
+              transparent 1.4deg 5deg
+            );
+            pointer-events: none;
+          "
+        ></div>
+        <div style="position: relative; max-width: 1000px; margin: 0 auto">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+            <div
+              style="
+                background: #f7f1e1;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.45);
+                padding: 20px;
+              "
+            >
+              <p
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 15px;
+                  letter-spacing: 2px;
+                  color: #1d5fa8;
+                  margin: 0 0 6px;
+                "
+              >
+                League play
+              </p>
+              <p
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 30px;
+                  letter-spacing: 1px;
+                  margin: 0 0 6px;
+                  line-height: 1.1;
+                "
+              >
+                Starts October 1st, 2026 <br />
+                Ends Dec 17, 2026
+              </p>
+            </div>
+            <div
+              style="
+                background: #f7f1e1;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.45);
+                padding: 20px;
+              "
+            >
+              <p
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 15px;
+                  letter-spacing: 2px;
+                  color: #b3891f;
+                  margin: 0 0 6px;
+                "
+              >
+                Game night
+              </p>
+              <p
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 30px;
+                  letter-spacing: 1px;
+                  margin: 0 0 6px;
+                  line-height: 1.1;
+                "
+              >
+                Thursdays
+              </p>
+              <p style="font-size: 14px; line-height: 1.5; color: #4a453c; margin: 0">
+                Game times rotate between 8:15 PM, 9:15 PM and 10:15 PM @ WSF Soccer South (U of Manitoba)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background: #f7f1e1; padding: 56px 20px">
+        <div style="max-width: 760px; margin: 0 auto">
+          <h2
+            style="
+              font-family: Bangers, cursive;
+              font-size: clamp(30px, 5vw, 44px);
+              letter-spacing: 2px;
+              margin: 0 0 8px;
+              color: #12100e;
+            "
+          >
+            How to register
+          </h2>
+          <div
+            style="height: 6px; width: 110px; background: #e0a82e; border: 2px solid #12100e; margin-bottom: 26px"
+          ></div>
+          <ol style="margin: 0 0 28px; padding: 0; list-style: none; display: grid; gap: 18px">
+            <li style="display: flex; gap: 14px; align-items: center">
+              <span
+                style="
+                  flex: none;
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #1d5fa8;
+                  color: #fff;
+                  border: 3px solid #12100e;
+                  font-family: Bangers, cursive;
+                  font-size: 19px;
+                  display: grid;
+                  place-items: center;
+                "
+                >1</span
+              >
+              <p style="margin: 0; font-size: 17px; line-height: 1.6; text-wrap: pretty">
+                Fill out the
+                <a
+                  href="https://docs.google.com/forms/d/196eXEPDJwjbVVhZ1rUEVO4Jo08Q11-nK3GbsVMBhW9Y/viewform"
+                  target="_blank"
+                  rel="noopener"
+                  style="font-weight: 700; color: #1d5fa8"
+                  >player interest form</a
+                >. It only takes a few minutes and tells captains you're available to be drafted.
+              </p>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: center">
+              <span
+                style="
+                  flex: none;
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #1d5fa8;
+                  color: #fff;
+                  border: 3px solid #12100e;
+                  font-family: Bangers, cursive;
+                  font-size: 19px;
+                  display: grid;
+                  place-items: center;
+                "
+                >2</span
+              >
+              <p style="margin: 0; font-size: 17px; line-height: 1.6; text-wrap: pretty">
+                Wait for the draft. Once captains have registered their teams, we run the draft and build rosters from
+                everyone who put their name in.
+              </p>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: center">
+              <span
+                style="
+                  flex: none;
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #1d5fa8;
+                  color: #fff;
+                  border: 3px solid #12100e;
+                  font-family: Bangers, cursive;
+                  font-size: 19px;
+                  display: grid;
+                  place-items: center;
+                "
+                >3</span
+              >
+              <p style="margin: 0; font-size: 17px; line-height: 1.6; text-wrap: pretty">
+                Your captain gets in touch with your team, schedule and payment details.
+              </p>
+            </li>
+          </ol>
+          <div
+            style="
+              background: #fff;
+              border: 3px solid #12100e;
+              border-left-width: 3px;
+              border-radius: 6px;
+              padding: 18px 20px;
+              box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+            "
+          >
+            <p
+              style="
+                font-family: Bangers, cursive;
+                font-size: 19px;
+                letter-spacing: 1.5px;
+                margin: 0 0 6px;
+                color: #c0192b;
+              "
+            >
+              Changed your plans?
+            </p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6">
+              No problem, just let us know before the draft.
+              <a href="mailto:wpgmiudl@gmail.com?subject=Withdraw%20interest" style="font-weight: 700">Email us</a>
+              and we'll pull your name from the pool. Withdrawing early helps captains plan.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section style="background: #12100e; color: #f7f1e1; padding: 52px 20px; position: relative; overflow: hidden">
+        <div
+          style="
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(#e0a82e 1.5px, transparent 1.6px);
+            background-size: 12px 12px;
+            opacity: 0.12;
+            pointer-events: none;
+          "
+        ></div>
+        <div
+          style="
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+            align-items: center;
+          "
+        >
+          <div>
+            <h2
+              style="
+                font-family: Bangers, cursive;
+                font-size: clamp(30px, 5vw, 44px);
+                letter-spacing: 2px;
+                margin: 0 0 8px;
+                color: #e0a82e;
+              "
+            >
+              Past champions
+            </h2>
+            <p style="font-size: 14px; color: #9c9384; margin: 0 0 22px">As engraved on the trophy.</p>
+            <div style="display: grid; gap: 2px">
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Winter 2023</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;Potoooooooo&rdquo;</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Fall 2023</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;Bermuda Grass&rdquo;</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Winter 2024</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;I Pity the Fool&rdquo;</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Fall 2024</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;Purple Ketchup&rdquo;</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Winter 2025</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;GoBots&rdquo;</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 4px 14px;
+                  align-items: baseline;
+                  padding: 11px 0;
+                  border-bottom: 1px solid rgba(247, 241, 225, 0.14);
+                "
+              >
+                <span
+                  style="
+                    font-family: Bangers, cursive;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                    color: #e0a82e;
+                    min-width: 116px;
+                  "
+                  >Fall 2026</span
+                >
+                <span style="font-weight: 700; font-size: 17px">&ldquo;Your Team Here&rdquo;</span>
+              </div>
+            </div>
+          </div>
+          <div style="justify-self: center; width: 100%; max-width: 300px">
+            <img
+              src="uploads/trophy.png"
+              alt="The MIUDL champions trophy"
+              style="display: block; width: 100%; height: auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section style="background: #f7f1e1; padding: 56px 20px">
+        <div style="max-width: 760px; margin: 0 auto">
+          <h2
+            style="
+              font-family: Bangers, cursive;
+              font-size: clamp(30px, 5vw, 44px);
+              letter-spacing: 2px;
+              margin: 0 0 8px;
+            "
+          >
+            FAQ
+          </h2>
+          <div
+            style="height: 6px; width: 110px; background: #1d5fa8; border: 2px solid #12100e; margin-bottom: 26px"
+          ></div>
+          <div style="display: grid; gap: 12px">
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>Who runs this league?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                MODS runs the actual league — the schedule, the field time start and end dates. MIUDL registers team(s)
+                into the league and organizes a fair draft so rosters are built by captains rather than assigned at
+                random.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>Why did the format change?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                MODS moved from individual first-come-first-serve signup with MODS-assigned teams to team-based
+                registration, where captains register a team and are free to create their own roster.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>How many teams will there be?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                8 is the maximum allowed in the league, but how many we actually field depends mainly on player interest
+                — the more players who sign up, the more teams (and captains) we can support. The more captains we get
+                registered on August 27 also helps secure spots, but player interest (looking for create teams of 10
+                players) is what really drives the number.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>How does the draft work?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                Captains register teams, players register their interest, and then we run a draft that builds balanced
+                rosters from the pool of interested players.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>How much will registration cost?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                We anticipate the cost will be around $150 per player (payable to the captains), based on the team
+                registration fee.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>Do I have to be a MODS member to participate?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                Yes. All players must have a valid MODS membership for the 2026/2027 seasons in order to be eligible for
+                the draft.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>When will the draft take place?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                The draft will take place shortly after the teams registrations. All players who have indicated their
+                interest will be emailed with additional details as the actual draft date nears.
+              </p>
+            </details>
+            <details
+              style="
+                background: #fff;
+                border: 3px solid #12100e;
+                border-radius: 6px;
+                box-shadow: 5px 5px 0 rgba(18, 16, 14, 0.15);
+                padding: 16px 18px;
+              "
+            >
+              <summary
+                style="
+                  font-family: Bangers, cursive;
+                  font-size: 21px;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  list-style: none;
+                  color: #12100e;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 14px;
+                "
+              >
+                <span>How do I register or withdraw interest?</span
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1D5FA8"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="flex: none"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style="margin: 12px 0 0; font-size: 16.5px; line-height: 1.65; color: #3a352d; text-wrap: pretty">
+                Fill out the player interest form linked above. If your plans change, email us before the draft and
+                we'll take your name out of the pool.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        style="
+          background: #1d5fa8;
+          color: #f7f1e1;
+          padding: 52px 20px 44px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          border-top: 5px solid #12100e;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            inset: -60% -20%;
+            background: repeating-conic-gradient(
+              from 0deg at 50% 0%,
+              rgba(224, 168, 46, 0.35) 0deg 1.2deg,
+              transparent 1.2deg 6deg
+            );
+            pointer-events: none;
+          "
+        ></div>
+        <div style="position: relative; max-width: 620px; margin: 0 auto">
+          <h2
+            style="
+              font-family: Bangers, cursive;
+              font-size: clamp(28px, 5vw, 40px);
+              letter-spacing: 2px;
+              margin: 0 0 10px;
+              text-shadow: 3px 3px 0 #12100e;
+            "
+          >
+            Questions?
+          </h2>
+          <p style="font-size: 16px; line-height: 1.6; margin: 0 0 22px; color: #e3ecf7">
+            Ask about the draft, captaining a team, or anything else. We're happy to hear from you.
+          </p>
+          <a
+            href="mailto:wpgmiudl@gmail.com"
+            class="miudl-btn miudl-btn-email"
+            style="
+              display: inline-block;
+              font-family: Bangers, cursive;
+              font-size: 22px;
+              letter-spacing: 1px;
+              background: #e0a82e;
+              color: #12100e;
+              padding: 14px 26px 11px;
+              border: 3px solid #12100e;
+              border-radius: 4px;
+              text-decoration: none;
+              word-break: break-word;
+            "
+            >Email us</a
+          >
+          <p style="margin: 28px 0 0; font-size: 13px; color: #cfe0f2">
+            MIUDL — Men's Indoor Ultimate Draft League, Winnipeg. League play runs through MODS.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
